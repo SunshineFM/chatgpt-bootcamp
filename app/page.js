@@ -233,72 +233,88 @@ export default function Home() {
 
           <div className={styles.pricingGrid}>
             <div className={styles.pricingCard}>
-              <h3>Small Teams (up to 20 people)</h3>
+              <h3>Small Teams</h3>
+              <p style={{ fontSize: '0.9rem', color: '#1F2527', marginBottom: '1.5rem' }}>Up to 20 people</p>
+              
               <div className={styles.pricingPrices}>
                 <div className={styles.priceRow}>
-                  <span>Half-Day:</span>
+                  <span>Half-Day</span>
                   <strong>$7,500</strong>
                 </div>
                 <div className={styles.priceRow}>
-                  <span>Full-Day:</span>
+                  <span>Full-Day</span>
                   <strong>$12,500</strong>
                 </div>
               </div>
+              
               <ul className={styles.pricingFeatures}>
                 <li>Core workshop experience</li>
                 <li>Readiness mapping + superpowers walkthrough</li>
-                <li>OpenAI DevDay tools demo (Atlas, Agents, Apps)</li>
+                <li>OpenAI DevDay tools demo</li>
                 <li>30-day adoption roadmap</li>
               </ul>
-              <div className={styles.pricingCustomize}>
-                Need custom formats? Book a call with Sat and we'll find the right fit.
+
+              <div className={styles.pricingCta}>
+                <button onClick={handleConsult}>Get Started</button>
               </div>
             </div>
 
             <div className={styles.pricingCard}>
-              <h3>Mid-Size Teams (21–50 people)</h3>
+              <h3>Mid-Size Teams</h3>
+              <p style={{ fontSize: '0.9rem', color: '#1F2527', marginBottom: '1.5rem' }}>21–50 people</p>
+              
               <div className={styles.pricingPrices}>
                 <div className={styles.priceRow}>
-                  <span>Half-Day:</span>
+                  <span>Half-Day</span>
                   <strong>$10,000</strong>
                 </div>
                 <div className={styles.priceRow}>
-                  <span>Full-Day:</span>
+                  <span>Full-Day</span>
                   <strong>$20,000</strong>
                 </div>
               </div>
+              
               <ul className={styles.pricingFeatures}>
                 <li>Everything above</li>
                 <li>Custom prompts + use cases per department</li>
                 <li>Team breakouts + shared playbooks</li>
               </ul>
-              <div className={styles.pricingCustomize}>
-                Need custom formats? Book a call with Sat and we'll find the right fit.
+
+              <div className={styles.pricingCta}>
+                <button onClick={handleConsult}>Get Started</button>
               </div>
             </div>
 
             <div className={styles.pricingCard}>
-              <h3>Enterprise Teams (51–100 people)</h3>
+              <h3>Enterprise Teams</h3>
+              <p style={{ fontSize: '0.9rem', color: '#1F2527', marginBottom: '1.5rem' }}>51–100 people</p>
+              
               <div className={styles.pricingPrices}>
                 <div className={styles.priceRow}>
-                  <span>Half-Day:</span>
+                  <span>Half-Day</span>
                   <strong>$15,000</strong>
                 </div>
                 <div className={styles.priceRow}>
-                  <span>Full-Day:</span>
+                  <span>Full-Day</span>
                   <strong>$25,000</strong>
                 </div>
               </div>
+              
               <ul className={styles.pricingFeatures}>
                 <li>Everything above</li>
                 <li>Agent prototyping + governance planning</li>
-                <li>Ideal for regulated industries or fast-scaling orgs</li>
+                <li>Ideal for regulated industries</li>
               </ul>
-              <div className={styles.pricingCustomize}>
-                Need custom formats? Book a call with Sat and we'll find the right fit.
+
+              <div className={styles.pricingCta}>
+                <button onClick={handleConsult}>Get Started</button>
               </div>
             </div>
           </div>
+
+          <p className={styles.pricingNote}>
+            Need multiple sessions or a custom format? Contact Sat directly at sat@aicv.co or 949-228-9475 — we'll create the right package for you.
+          </p>
         </div>
       </section>
 
@@ -348,35 +364,45 @@ export default function Home() {
 
       {/* Footer */}
       <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <div className={styles.footerSection}>
-            <h3>Direct Contact</h3>
-            <p><strong>Sat Singh</strong></p>
-            <p>Founder, AICV (AI Coachella Valley)</p>
-            <div className={styles.footerContact}>
-              <a href="tel:949-228-9475">949-228-9475</a>
-            </div>
-            <div className={styles.footerContact}>
+        <div className={styles.container}>
+          <div className={styles.footerContent}>
+            <div className={styles.footerSection}>
+              <h3>Direct Contact</h3>
+              <div className={styles.footerContact}>
+                <strong>Sat Singh</strong>
+                <span style={{ fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.7)' }}>Founder, AICV</span>
+              </div>
+              <a href="tel:949-228-9475" style={{ display: 'block', marginBottom: '0.5rem' }}>949-228-9475</a>
               <a href="mailto:sat@aicv.co">sat@aicv.co</a>
+              <p style={{ fontSize: '0.8rem', marginTop: '1rem', color: 'rgba(255, 255, 255, 0.6)' }}>
+                Responses typically within 24 hours
+              </p>
             </div>
-            <p style={{ fontSize: '0.85rem', marginTop: '1rem', color: 'rgba(255, 255, 255, 0.7)' }}>
-              Responses typically within 24 hours
-            </p>
+
+            <div className={styles.footerSection}>
+              <h3>About AICV</h3>
+              <p>
+                AICV is the go-to resource for AI adoption, training, and transformation across the Coachella Valley. In 2025 alone, we've delivered 20+ workshops to 200+ participants.
+              </p>
+              <p>
+                We live here. We build here. We believe AI readiness should be for everyone — not just the early adopters.
+              </p>
+            </div>
+
+            <div className={styles.footerSection}>
+              <h3>Quick Links</h3>
+              <ul style={{ listStyle: 'none', padding: 0 }}>
+                <li><a href="#why" style={{ color: 'rgba(255, 255, 255, 0.8)', textDecoration: 'none', marginBottom: '0.5rem', display: 'block' }}>Why It Matters</a></li>
+                <li><a href="#stages" style={{ color: 'rgba(255, 255, 255, 0.8)', textDecoration: 'none', marginBottom: '0.5rem', display: 'block' }}>Five Stages</a></li>
+                <li><a href="#pricing" style={{ color: 'rgba(255, 255, 255, 0.8)', textDecoration: 'none', marginBottom: '0.5rem', display: 'block' }}>Pricing</a></li>
+                <li><a href="#faq" style={{ color: 'rgba(255, 255, 255, 0.8)', textDecoration: 'none', marginBottom: '0.5rem', display: 'block' }}>FAQ</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div className={styles.footerSection}>
-            <h3>About AICV</h3>
-            <p>
-              AICV is the go-to resource for AI adoption, training, and transformation across the Coachella Valley. In 2025 alone, we've delivered 20+ workshops to 200+ participants — from nonprofits to city governments to fast-moving startups.
-            </p>
-            <p>
-              We live here. We build here. And we believe AI readiness should be for everyone — not just the early adopters.
-            </p>
+          <div className={styles.footerBottom}>
+            <p>© 2025 ChatGPT Business Bootcamp by AICV. All rights reserved.</p>
           </div>
-        </div>
-
-        <div className={styles.footerBottom}>
-          <p>© 2025 ChatGPT Business Bootcamp by AICV. All rights reserved.</p>
         </div>
       </footer>
     </>
