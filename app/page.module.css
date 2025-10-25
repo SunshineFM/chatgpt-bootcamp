@@ -20,7 +20,7 @@
 .logo {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--volt-600);
+  color: #74A800;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5px;
 }
@@ -35,18 +35,18 @@
   font-weight: 600;
   font-size: 0.95rem;
   font-family: 'Poppins', sans-serif;
-  color: var(--gunmetal-900);
+  color: #1F2527;
   transition: color 0.3s ease;
 }
 
 .navLinks a:hover {
-  color: var(--volt-600);
+  color: #74A800;
 }
 
 /* Hero */
 .hero {
   position: relative;
-  background: linear-gradient(135deg, var(--pine-900) 0%, var(--pine-600) 100%);
+  background: linear-gradient(135deg, #0F2E23 0%, #165C42 100%);
   color: white;
   padding: 6rem 2rem;
   text-align: center;
@@ -61,7 +61,7 @@
   right: 0;
   bottom: 0;
   background: url('/Sat TedX 1920 1080.png') center/cover;
-  opacity: 0.3;
+  opacity: 0.25;
   z-index: 1;
 }
 
@@ -109,7 +109,7 @@
 
 /* Why This Matters */
 .whyMatters {
-  background: var(--snow);
+  background: #FAFBFA;
   padding: 5rem 0;
 }
 
@@ -121,14 +121,14 @@
 .whyMattersTitle {
   text-align: left;
   margin-bottom: 2rem;
-  color: var(--pine-900);
+  color: #0F2E23;
   font-size: 2.2rem;
 }
 
 .whyMattersText {
   font-size: 1rem;
   line-height: 1.9;
-  color: var(--gunmetal-900);
+  color: #1F2527;
   text-align: left;
 }
 
@@ -137,7 +137,7 @@
 }
 
 .whyMattersText strong {
-  color: var(--volt-600);
+  color: #74A800;
   font-weight: 600;
 }
 
@@ -151,27 +151,27 @@
   padding-left: 1.75rem;
   margin-bottom: 0.75rem;
   position: relative;
-  color: var(--gunmetal-900);
+  color: #1F2527;
 }
 
 .whyMattersText li:before {
   content: '→';
   position: absolute;
   left: 0;
-  color: var(--volt-600);
+  color: #74A800;
   font-weight: 700;
 }
 
 /* Five Stages */
 .fiveStages {
-  background: var(--pine-mist);
+  background: linear-gradient(135deg, #EEF5F1 0%, #F8FDEB 100%);
   padding: 5rem 0;
 }
 
 .fiveStagesTitle {
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--pine-900);
+  color: #0F2E23;
 }
 
 .fiveStagesSubtitle {
@@ -179,7 +179,7 @@
   max-width: 750px;
   margin: 0 auto 3rem;
   font-size: 1rem;
-  color: var(--gunmetal-900);
+  color: #1F2527;
 }
 
 .stagesContainer {
@@ -191,13 +191,13 @@
 }
 
 .stageCard {
-  background: var(--snow);
+  background: #FAFBFA;
   border-radius: 0.75rem;
   padding: 2rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  border-top: 3px solid var(--volt-600);
+  border-top: 4px solid #74A800;
 }
 
 .stageCard:hover {
@@ -206,7 +206,7 @@
 }
 
 .stageCard h3 {
-  color: var(--pine-900);
+  color: #0F2E23;
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
@@ -215,7 +215,7 @@
   font-size: 0.95rem;
   line-height: 1.7;
   margin: 0;
-  color: var(--gunmetal-900);
+  color: #1F2527;
 }
 
 @media (max-width: 1024px) {
@@ -237,7 +237,7 @@
 
 /* Testimonials */
 .testimonials {
-  background: var(--snow);
+  background: #FAFBFA;
   padding: 5rem 0;
 }
 
@@ -249,10 +249,10 @@
 }
 
 .testimonialCard {
-  background: var(--volt-whisper);
+  background: #F8FDEB;
   padding: 2rem;
   border-radius: 0.75rem;
-  border-left: 4px solid var(--volt-600);
+  border-left: 4px solid #74A800;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -272,13 +272,13 @@
 .testimonialText {
   font-size: 0.95rem;
   line-height: 1.7;
-  color: var(--gunmetal-900);
+  color: #1F2527;
   margin-bottom: 1.25rem;
 }
 
 .testimonialName {
   font-weight: 600;
-  color: var(--pine-900);
+  color: #0F2E23;
   font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
 }
@@ -298,7 +298,7 @@
 
 /* Facilitator */
 .facilitator {
-  background: linear-gradient(135deg, var(--pine-900) 0%, var(--pine-600) 100%);
+  background: linear-gradient(135deg, #0F2E23 0%, #165C42 100%);
   color: white;
   padding: 5rem 0;
 }
@@ -320,15 +320,15 @@
 .facilitatorImage img {
   width: 100%;
   max-width: 320px;
-  height: auto;
+  height: 320px;
+  object-fit: cover;
   border-radius: 0.75rem;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   display: block;
-  object-fit: cover;
 }
 
 .facilitatorText h2 {
-  color: white;
+  color: #B7F14D;
   margin-bottom: 1.5rem;
 }
 
@@ -347,12 +347,13 @@
 
   .facilitatorImage img {
     max-width: 280px;
+    height: 280px;
   }
 }
 
 /* Pricing */
 .pricing {
-  background: var(--snow);
+  background: #FAFBFA;
   padding: 5rem 0;
 }
 
@@ -368,7 +369,7 @@
 
 .pricingHeader p {
   font-size: 0.95rem;
-  color: var(--gunmetal-900);
+  color: #1F2527;
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -377,77 +378,110 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .pricingCard {
-  background: var(--pine-mist);
-  border: 2px solid var(--volt-600);
-  border-radius: 0.75rem;
-  padding: 2rem;
+  background: white;
+  border: 2px solid #EEF5F1;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
 }
 
 .pricingCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(116, 168, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(116, 168, 0, 0.15);
+  border-color: #74A800;
 }
 
 .pricingCard h3 {
-  color: var(--pine-900);
-  margin-bottom: 1.5rem;
-  font-size: 1.3rem;
+  color: #0F2E23;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .pricingPrices {
-  margin-bottom: 1.5rem;
-  padding: 1.25rem 0;
-  border-top: 2px solid var(--volt-600);
-  border-bottom: 2px solid var(--volt-600);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #EEF5F1;
 }
 
 .priceRow {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.75rem;
-  font-weight: 600;
-  color: var(--pine-900);
+  align-items: center;
+  margin-bottom: 1rem;
   font-size: 0.95rem;
+}
+
+.priceRow span {
+  color: #1F2527;
+  font-weight: 500;
+}
+
+.priceRow strong {
+  color: #74A800;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .pricingFeatures {
   list-style: none;
   text-align: left;
-  margin: 1.5rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .pricingFeatures li {
-  padding: 0.5rem 0 0.5rem 1.5rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
   position: relative;
-  color: var(--gunmetal-900);
+  color: #1F2527;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .pricingFeatures li:before {
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--volt-600);
+  color: #74A800;
   font-weight: 700;
 }
 
-.pricingCustomize {
-  text-align: center;
+.pricingCta {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--volt-600);
-  color: var(--gunmetal-900);
+  border-top: 1px solid #EEF5F1;
+}
+
+.pricingCta button {
+  width: 100%;
+  background: linear-gradient(135deg, #74A800 0%, #165C42 100%);
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pricingCta button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(116, 168, 0, 0.25);
+}
+
+.pricingNote {
+  text-align: center;
+  margin-top: 2.5rem;
   font-size: 0.9rem;
+  color: #1F2527;
 }
 
 @media (max-width: 1024px) {
@@ -460,11 +494,15 @@
   .pricingGrid {
     grid-template-columns: 1fr;
   }
+
+  .pricingCard {
+    padding: 2rem 1.5rem;
+  }
 }
 
 /* FAQ */
 .faq {
-  background: var(--volt-whisper);
+  background: linear-gradient(135deg, #F8FDEB 0%, #EEF5F1 100%);
   padding: 5rem 0;
 }
 
@@ -476,15 +514,15 @@
 }
 
 .faqItem {
-  background: var(--snow);
+  background: white;
   padding: 2rem;
   border-radius: 0.75rem;
-  border-left: 4px solid var(--volt-600);
+  border-left: 4px solid #74A800;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .faqItem h3 {
-  color: var(--pine-900);
+  color: #0F2E23;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
@@ -492,7 +530,7 @@
 .faqItem p {
   margin: 0;
   font-size: 0.95rem;
-  color: var(--gunmetal-900);
+  color: #1F2527;
   line-height: 1.7;
 }
 
@@ -504,7 +542,7 @@
 
 /* CTA Section */
 .ctaSection {
-  background: linear-gradient(135deg, var(--volt-600) 0%, var(--pine-600) 100%);
+  background: linear-gradient(135deg, #74A800 0%, #165C42 100%);
   color: white;
   text-align: center;
   padding: 4rem 2rem;
@@ -557,17 +595,23 @@
 
 /* Footer */
 .footer {
-  background: var(--gunmetal-900);
+  background: #1F2527;
   color: white;
-  padding: 3.5rem 0 1.5rem;
-  border-top: 3px solid var(--volt-600);
+  padding: 4rem 0 2rem;
+  border-top: 3px solid #74A800;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .footerContent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -575,29 +619,48 @@
 }
 
 .footerSection h3 {
-  color: white;
-  margin-bottom: 1.25rem;
+  color: #B7F14D;
+  margin-bottom: 1.5rem;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .footerSection p {
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   font-size: 0.9rem;
+  line-height: 1.7;
 }
 
 .footerContact {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footerContact strong {
+  color: white;
+  font-size: 0.95rem;
 }
 
 .footerContact a {
-  color: var(--volt-600);
+  color: #B7F14D;
   font-weight: 600;
-  font-size: 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footerContact a:hover {
+  color: #74A800;
+}
+
+.footerDivider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
 }
 
 .footerBottom {
