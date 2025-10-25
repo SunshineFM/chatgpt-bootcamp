@@ -4,8 +4,6 @@ import styles from './page.module.css';
 import { useState } from 'react';
 
 export default function Home() {
-  const [pricingType, setPricingType] = useState('half-day');
-
   const handleWaitlist = () => {
     window.location.href = 'mailto:sat@aicv.co?subject=Join%20ChatGPT%20Business%20Bootcamp%20Waitlist&body=I\'m%20interested%20in%20scheduling%20a%20ChatGPT%20Business%20Bootcamp%20for%20my%20team.%0A%0ATeam%20Size:%0APreferred%20Date:%0AFormat:%20Half-Day%20or%20Full-Day%0A%0APlease%20call%20me%20back%20at:%0A%0AThank%20you!';
   };
@@ -14,106 +12,55 @@ export default function Home() {
     window.location.href = 'mailto:sat@aicv.co?subject=Schedule%20Free%20Consultation&body=I\'d%20like%20to%20schedule%20a%20free%20consultation%20to%20discuss%20the%20ChatGPT%20Business%20Bootcamp.%0A%0ABest%20times%20to%20reach%20me:%0A%0APhone:%0A%0AThank%20you!';
   };
 
-  const handleCall = () => {
-    window.location.href = 'tel:949-228-9475';
-  };
-
   const testimonials = [
     {
       name: 'Martha Z',
-      stars: 5,
       text: 'So much knowledge, believe this should be taught in schools! This was a really fun workshop and eager to be that 1% in learning where it takes off.',
     },
     {
       name: 'Jeff H',
-      stars: 5,
       text: 'Today\'s class was eye opening and potential career altering. Sat and Habib continue to demonstrate opportunities utilizing the AI tools available today that can positively impact our local businesses.',
     },
     {
       name: 'David W',
-      stars: 5,
       text: 'I am far more than excited about these workshops as they deliver the goods! I can\'t remember any other workshop where I have learned real-world, practical uses and had time to try these processes at the same time.',
     },
     {
       name: 'Binita S',
-      stars: 5,
       text: 'Loving the community-centered aspect and meeting so many talented, knowledgeable folks. Today\'s custom GPT creation was fantastic! Would be great to do one of these each week.',
     },
     {
       name: 'Brian L',
-      stars: 5,
       text: 'Exceeded my expectations — which were high. So eager to attend more sessions as often as possible.',
     },
     {
       name: 'Workshop Participant',
-      stars: 5,
       text: 'Outstanding work, knowledge, and expertise. The ability to communicate effectively and help teams move forward together is exceptional.',
     },
   ];
 
   const stages = [
     {
-      icon: '🧭',
       title: 'The Scan',
       description: 'How Aligned Are You, Really? We start with a diagnostic based on your team\'s pre-bootcamp quiz — to uncover how ChatGPT is being used, where it\'s underused, where the team is fractured, and where there\'s real opportunity to raise confidence and coordination.',
     },
     {
-      icon: '🟢',
       title: 'The Unlock',
       description: 'Beyond Prompts and Email Drafts. We go past the basics. Your team learns how to choose the right model, set up memory, create shareable projects, apply roles, and design real-world workflows to work faster, better, and smarter.',
     },
     {
-      icon: '🟢',
       title: 'The Update',
       description: 'Atlas, Agents, and the Future of Work. We walk through OpenAI\'s latest tools — Atlas, Agents, Apps — and help your team separate the hype from what\'s real. Know what to use, what to test, and what could 10x your organization\'s velocity.',
     },
     {
-      icon: '🟢',
       title: 'The Map',
       description: 'From Curious to Coordinated. Who pilots what? What\'s worth scaling? What should become shared muscle across teams? Together, we co-create a practical roadmap for ChatGPT adoption tailored to your org\'s real dynamics.',
     },
     {
-      icon: '🟢',
       title: 'The Alignment',
-      description: 'One Team. Superpowers Unlocked. By the end, your team won\'t just "know ChatGPT" — they\'ll be ChatGPT Jedis. Aligned, empowered, and operating with a new swagger of confidence, clarity, and shared momentum.',
+      description: 'One Team. Superpowers Unlocked. By the end, your team won\'t just "know ChatGPT" — they\'ll be ChatGPT experts. Aligned, empowered, and operating with confidence, clarity, and shared momentum.',
     },
   ];
-
-  const pricingOptions = {
-    'half-day': [
-      {
-        size: '👥 Small Teams (up to 20 people)',
-        halfDay: '$7,500',
-        fullDay: '$12,500',
-        features: [
-          'Core workshop experience',
-          'Readiness mapping + superpowers walkthrough',
-          'OpenAI DevDay tools demo (Atlas, Agents, Apps)',
-          '30-day adoption roadmap',
-        ],
-      },
-      {
-        size: '👥 Mid-Size Teams (21–50 people)',
-        halfDay: '$10,000',
-        fullDay: '$20,000',
-        features: [
-          'Everything above',
-          'Custom prompts + use cases per department',
-          'Team breakouts + shared playbooks',
-        ],
-      },
-      {
-        size: '👥 Enterprise Teams (51–100 people)',
-        halfDay: '$15,000',
-        fullDay: '$25,000',
-        features: [
-          'Everything above',
-          'Agent prototyping + governance planning',
-          'Ideal for regulated industries or fast-scaling orgs',
-        ],
-      },
-    ],
-  };
 
   const faqs = [
     {
@@ -147,10 +94,10 @@ export default function Home() {
       {/* Navigation */}
       <nav className={styles.nav}>
         <div className={styles.navContent}>
-          <div className={styles.logo}>CHATGPT BOOTCAMP</div>
+          <div className={styles.logo}>AICV BOOTCAMP</div>
           <ul className={styles.navLinks}>
             <li><a href="#why">Why It Matters</a></li>
-            <li><a href="#stages">The Five Stages</a></li>
+            <li><a href="#stages">Five Stages</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
@@ -184,7 +131,7 @@ export default function Home() {
       <section className={styles.whyMatters} id="why">
         <div className={styles.container}>
           <div className={styles.whyMattersContent}>
-            <h2 className={styles.whyMattersTitle}>⚡ Why This Matters Now</h2>
+            <h2 className={styles.whyMattersTitle}>Why This Matters Now</h2>
             <div className={styles.whyMattersText}>
               <p>
                 Most teams didn't get a playbook for this moment. So what's happening? Individuals are experimenting with ChatGPT in isolation — across departments, roles, even leadership. Some are confident. Others are quiet. The result? A lot of activity, and very little alignment.
@@ -214,14 +161,13 @@ export default function Home() {
       {/* Five Stages */}
       <section className={styles.fiveStages} id="stages">
         <div className={styles.container}>
-          <h2 className={styles.fiveStagesTitle}>🧭 The Five Stages to Team AI</h2>
+          <h2 className={styles.fiveStagesTitle}>The Five Stages to Team AI</h2>
           <p className={styles.fiveStagesSubtitle}>
             We'll upskill you with a shared understanding, smarter workflows, and real alignment around how ChatGPT gets used across your organization. Where you take it next? That's up to you. But either way, you'll be way ahead of your competitors.
           </p>
           <div className={styles.stagesContainer}>
             {stages.map((stage, idx) => (
               <div key={idx} className={styles.stageCard}>
-                <div className={styles.stageIcon}>{stage.icon}</div>
                 <h3>{stage.title}</h3>
                 <p>{stage.description}</p>
               </div>
@@ -233,7 +179,7 @@ export default function Home() {
       {/* Testimonials */}
       <section className={styles.testimonials}>
         <div className={styles.container}>
-          <h2 className={styles.testimonialsTitle} style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>
             Real Feedback from Real Workshops
           </h2>
           <div className={styles.testimonialsGrid}>
@@ -286,29 +232,72 @@ export default function Home() {
           </div>
 
           <div className={styles.pricingGrid}>
-            {pricingOptions['half-day'].map((card, idx) => (
-              <div key={idx} className={styles.pricingCard}>
-                <h3>{card.size}</h3>
-                <div className={styles.pricingPrices}>
-                  <div className={styles.priceRow}>
-                    <span>Half-Day:</span>
-                    <strong>{card.halfDay}</strong>
-                  </div>
-                  <div className={styles.priceRow}>
-                    <span>Full-Day:</span>
-                    <strong>{card.fullDay}</strong>
-                  </div>
+            <div className={styles.pricingCard}>
+              <h3>Small Teams (up to 20 people)</h3>
+              <div className={styles.pricingPrices}>
+                <div className={styles.priceRow}>
+                  <span>Half-Day:</span>
+                  <strong>$7,500</strong>
                 </div>
-                <ul className={styles.pricingFeatures}>
-                  {card.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
-                <div className={styles.pricingCustomize}>
-                  Need multiple sessions or custom formats? We're happy to tailor it — just book a quick call with Sat Singh and we'll find the right fit.
+                <div className={styles.priceRow}>
+                  <span>Full-Day:</span>
+                  <strong>$12,500</strong>
                 </div>
               </div>
-            ))}
+              <ul className={styles.pricingFeatures}>
+                <li>Core workshop experience</li>
+                <li>Readiness mapping + superpowers walkthrough</li>
+                <li>OpenAI DevDay tools demo (Atlas, Agents, Apps)</li>
+                <li>30-day adoption roadmap</li>
+              </ul>
+              <div className={styles.pricingCustomize}>
+                Need custom formats? Book a call with Sat and we'll find the right fit.
+              </div>
+            </div>
+
+            <div className={styles.pricingCard}>
+              <h3>Mid-Size Teams (21–50 people)</h3>
+              <div className={styles.pricingPrices}>
+                <div className={styles.priceRow}>
+                  <span>Half-Day:</span>
+                  <strong>$10,000</strong>
+                </div>
+                <div className={styles.priceRow}>
+                  <span>Full-Day:</span>
+                  <strong>$20,000</strong>
+                </div>
+              </div>
+              <ul className={styles.pricingFeatures}>
+                <li>Everything above</li>
+                <li>Custom prompts + use cases per department</li>
+                <li>Team breakouts + shared playbooks</li>
+              </ul>
+              <div className={styles.pricingCustomize}>
+                Need custom formats? Book a call with Sat and we'll find the right fit.
+              </div>
+            </div>
+
+            <div className={styles.pricingCard}>
+              <h3>Enterprise Teams (51–100 people)</h3>
+              <div className={styles.pricingPrices}>
+                <div className={styles.priceRow}>
+                  <span>Half-Day:</span>
+                  <strong>$15,000</strong>
+                </div>
+                <div className={styles.priceRow}>
+                  <span>Full-Day:</span>
+                  <strong>$25,000</strong>
+                </div>
+              </div>
+              <ul className={styles.pricingFeatures}>
+                <li>Everything above</li>
+                <li>Agent prototyping + governance planning</li>
+                <li>Ideal for regulated industries or fast-scaling orgs</li>
+              </ul>
+              <div className={styles.pricingCustomize}>
+                Need custom formats? Book a call with Sat and we'll find the right fit.
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -316,7 +305,7 @@ export default function Home() {
       {/* FAQ */}
       <section className={styles.faq} id="faq">
         <div className={styles.container}>
-          <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Frequently Asked Questions</h2>
+          <h2 style={{ textAlign: 'center', marginBottom: '2.5rem' }}>Frequently Asked Questions</h2>
           <div className={styles.faqGrid}>
             {faqs.map((faq, idx) => (
               <div key={idx} className={styles.faqItem}>
@@ -340,7 +329,7 @@ export default function Home() {
           </p>
 
           <div className={styles.ctaHighlight}>
-            <h3>🔒 Limited Availability</h3>
+            <h3>Limited Availability</h3>
             <p>
               We only run one bootcamp per week to keep it high-impact and highly tailored. If this sounds like the edge your team needs, let's talk.
             </p>
@@ -361,24 +350,22 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
-            <h3>💬 Direct Contact</h3>
+            <h3>Direct Contact</h3>
             <p><strong>Sat Singh</strong></p>
             <p>Founder, AICV (AI Coachella Valley)</p>
             <div className={styles.footerContact}>
-              <span>📞</span>
               <a href="tel:949-228-9475">949-228-9475</a>
             </div>
             <div className={styles.footerContact}>
-              <span>✉️</span>
               <a href="mailto:sat@aicv.co">sat@aicv.co</a>
             </div>
-            <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
+            <p style={{ fontSize: '0.85rem', marginTop: '1rem', color: 'rgba(255, 255, 255, 0.7)' }}>
               Responses typically within 24 hours
             </p>
           </div>
 
           <div className={styles.footerSection}>
-            <h3>🔍 About AICV</h3>
+            <h3>About AICV</h3>
             <p>
               AICV is the go-to resource for AI adoption, training, and transformation across the Coachella Valley. In 2025 alone, we've delivered 20+ workshops to 200+ participants — from nonprofits to city governments to fast-moving startups.
             </p>
