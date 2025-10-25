@@ -130,4 +130,268 @@ export default function Home() {
     },
     {
       question: 'What do we get after the bootcamp?',
-      answer: 'You leave with a 30-day action map customized to your team, access to key resource
+      answer: 'You leave with a 30-day action map customized to your team, access to key resources, and direct access to Sat for follow-up questions during your first month.',
+    },
+    {
+      question: 'What\'s the ideal team size?',
+      answer: 'We accommodate teams of 15–40 per session (ideal size for engagement). Larger teams (50–100) can add facilitators. We scale to your needs.',
+    },
+    {
+      question: 'In-person or remote?',
+      answer: 'Both. We come to your location or meet online — whatever works for your team. The experience is identical either way.',
+    },
+  ];
+
+  return (
+    <>
+      {/* Navigation */}
+      <nav className={styles.nav}>
+        <div className={styles.navContent}>
+          <div className={styles.logo}>CHATGPT BOOTCAMP</div>
+          <ul className={styles.navLinks}>
+            <li><a href="#why">Why It Matters</a></li>
+            <li><a href="#stages">The Five Stages</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className={styles.hero}>
+        <div className={styles.container}>
+          <div className={styles.heroContent}>
+            <h1>Your Team's Already Using ChatGPT — Just Not Together.</h1>
+            <p className={styles.heroSubtitle}>
+              Our Business Bootcamp fixes that. Your Team. Your Place. One Playbook.
+            </p>
+            <p className={styles.heroCredentials}>
+              Led by Sat Singh, TedX Speaker and Founder
+            </p>
+            <div className={styles.heroCTA}>
+              <button className={styles.btnPrimary} onClick={handleWaitlist}>
+                Join the Waitlist
+              </button>
+              <button className={styles.btnSecondary} onClick={handleConsult}>
+                Schedule Free Consult
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why This Matters */}
+      <section className={styles.whyMatters} id="why">
+        <div className={styles.container}>
+          <div className={styles.whyMattersContent}>
+            <h2 className={styles.whyMattersTitle}>⚡ Why This Matters Now</h2>
+            <div className={styles.whyMattersText}>
+              <p>
+                Most teams didn't get a playbook for this moment. So what's happening? Individuals are experimenting with ChatGPT in isolation — across departments, roles, even leadership. Some are confident. Others are quiet. The result? A lot of activity, and very little alignment.
+              </p>
+              <p>
+                <strong>And without alignment, there's no compounding effect.</strong>
+              </p>
+              <p>
+                This isn't about learning "more features." It's about giving your organization a shared operating system for AI — one that shows up in workflows, decisions, strategy, and speed. The longer you wait to sync your team, the more fragmented (and expensive) things become.
+              </p>
+              <p>
+                <strong>The sooner you close the readiness gap, the sooner your team can:</strong>
+              </p>
+              <ul>
+                <li>Move faster across ops and product</li>
+                <li>Reduce friction in communication and execution</li>
+                <li>Spot innovation opportunities others miss</li>
+              </ul>
+              <p>
+                ChatGPT is already reshaping how people think, write, work, and build. But it's not a superpower if it's only in the hands of a few. Alignment is what turns it into a system your whole team can run on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Five Stages */}
+      <section className={styles.fiveStages} id="stages">
+        <div className={styles.container}>
+          <h2 className={styles.fiveStagesTitle}>🧭 The Five Stages to Team AI</h2>
+          <p className={styles.fiveStagesSubtitle}>
+            We'll upskill you with a shared understanding, smarter workflows, and real alignment around how ChatGPT gets used across your organization. Where you take it next? That's up to you. But either way, you'll be way ahead of your competitors.
+          </p>
+          <div className={styles.stagesContainer}>
+            {stages.map((stage, idx) => (
+              <div key={idx} className={styles.stageCard}>
+                <div className={styles.stageIcon}>{stage.icon}</div>
+                <h3>{stage.title}</h3>
+                <p>{stage.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className={styles.testimonials}>
+        <div className={styles.container}>
+          <h2 className={styles.testimonialsTitle} style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            Real Feedback from Real Workshops
+          </h2>
+          <div className={styles.testimonialsGrid}>
+            {testimonials.map((testimonial, idx) => (
+              <div key={idx} className={styles.testimonialCard}>
+                <div className={styles.stars}>★★★★★</div>
+                <p className={styles.testimonialText}>{testimonial.text}</p>
+                <p className={styles.testimonialName}>— {testimonial.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Facilitator */}
+      <section className={styles.facilitator}>
+        <div className={styles.container}>
+          <div className={styles.facilitatorContent}>
+            <div className={styles.facilitatorImage}>
+              <img src="/Sat Headshot 400 x 400.png" alt="Sat Singh, Founder of AICV" />
+            </div>
+            <div className={styles.facilitatorText}>
+              <h2>Your Facilitator</h2>
+              <p>
+                Sat Singh is the founder of AICV — AI Coachella Valley, and a driving force behind team-based AI adoption across the region. He's led over 20 hands-on AI workshops with 200+ participants from local businesses, nonprofits, and universities — helping teams move from scattered experimentation to real strategic alignment.
+              </p>
+              <p>
+                A former executive with Fortune 500 companies and a startup founder who sold his mobile gaming venture to King.com, Sat brings a rare mix of business rigor, creative energy, and deep tech fluency. He's been in the startup world since 2011, and his sweet spot is getting teams from zero to one — fast.
+              </p>
+              <p>
+                In 2025, Sat took the TEDx Rancho Mirage stage to talk about AI transformation and human potential. His superpower? Making AI practical, collaborative, and deeply relevant for teams across industries. Whether you're in marketing, operations, HR, or leadership — Sat speaks your language and helps teams move forward, together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className={styles.pricing} id="pricing">
+        <div className={styles.container}>
+          <div className={styles.pricingHeader}>
+            <h2>Transparent Pricing</h2>
+            <p>Straightforward, impact-based, and mission-driven.</p>
+            <p>
+              We're upfront about pricing — because we've seen what it costs to fly in consultants who don't know your community, your teams, or your industry. We're based here in the Coachella Valley, and our mission is to make sure every organization in the desert is not just keeping up with AI — but leading with it.
+            </p>
+            <p>
+              <strong>You're not paying for slides. You're investing in alignment, superpowers, and a clear plan forward.</strong>
+            </p>
+          </div>
+
+          <div className={styles.pricingGrid}>
+            {pricingOptions['half-day'].map((card, idx) => (
+              <div key={idx} className={styles.pricingCard}>
+                <h3>{card.size}</h3>
+                <div className={styles.pricingPrices}>
+                  <div className={styles.priceRow}>
+                    <span>Half-Day:</span>
+                    <strong>{card.halfDay}</strong>
+                  </div>
+                  <div className={styles.priceRow}>
+                    <span>Full-Day:</span>
+                    <strong>{card.fullDay}</strong>
+                  </div>
+                </div>
+                <ul className={styles.pricingFeatures}>
+                  {card.features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
+                  ))}
+                </ul>
+                <div className={styles.pricingCustomize}>
+                  Need multiple sessions or custom formats? We're happy to tailor it — just book a quick call with Sat Singh and we'll find the right fit.
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className={styles.faq} id="faq">
+        <div className={styles.container}>
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Frequently Asked Questions</h2>
+          <div className={styles.faqGrid}>
+            {faqs.map((faq, idx) => (
+              <div key={idx} className={styles.faqItem}>
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.container}>
+          <h2>Ready to Close the AI Readiness Gap at Your Organization?</h2>
+          <p>
+            This isn't just a ChatGPT feature demo. It's a Business Bootcamp designed to align your entire team, close your organization's readiness gap, and unlock real AI productivity — fast.
+          </p>
+          <p>
+            Don't let your competitors take the lead. Most are already experimenting. The smart ones are aligning. This bootcamp helps you do both — before AI gets siloed, stalled, or outpaced.
+          </p>
+
+          <div className={styles.ctaHighlight}>
+            <h3>🔒 Limited Availability</h3>
+            <p>
+              We only run one bootcamp per week to keep it high-impact and highly tailored. If this sounds like the edge your team needs, let's talk.
+            </p>
+          </div>
+
+          <div className={styles.ctaActions}>
+            <button className={styles.btnPrimary} onClick={handleWaitlist}>
+              Join the Waitlist
+            </button>
+            <button className={styles.btnSecondary} onClick={handleConsult}>
+              Schedule a Free Consult
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className={styles.footer}>
+        <div className={styles.footerContent}>
+          <div className={styles.footerSection}>
+            <h3>💬 Direct Contact</h3>
+            <p><strong>Sat Singh</strong></p>
+            <p>Founder, AICV (AI Coachella Valley)</p>
+            <div className={styles.footerContact}>
+              <span>📞</span>
+              <a href="tel:949-228-9475">949-228-9475</a>
+            </div>
+            <div className={styles.footerContact}>
+              <span>✉️</span>
+              <a href="mailto:sat@aicv.co">sat@aicv.co</a>
+            </div>
+            <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
+              Responses typically within 24 hours
+            </p>
+          </div>
+
+          <div className={styles.footerSection}>
+            <h3>🔍 About AICV</h3>
+            <p>
+              AICV is the go-to resource for AI adoption, training, and transformation across the Coachella Valley. In 2025 alone, we've delivered 20+ workshops to 200+ participants — from nonprofits to city governments to fast-moving startups.
+            </p>
+            <p>
+              We live here. We build here. And we believe AI readiness should be for everyone — not just the early adopters.
+            </p>
+          </div>
+        </div>
+
+        <div className={styles.footerBottom}>
+          <p>© 2025 ChatGPT Business Bootcamp by AICV. All rights reserved.</p>
+        </div>
+      </footer>
+    </>
+  );
+}
