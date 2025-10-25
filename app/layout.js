@@ -1,13 +1,13 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'ChatGPT Business Bootcamp - Close Your AI Readiness Gap in 4 Hours',
-  description: 'Close your team\'s AI readiness gap in 4 hours. Learn ChatGPT alignment, practical workflows, and latest tools (Atlas, Agents, Apps). Led by Sat, AICV founder.',
-  keywords: 'ChatGPT training, AI bootcamp, team alignment, ChatGPT workshop, business AI',
+  title: 'ChatGPT Business Bootcamp - Close Your AI Readiness Gap',
+  description: 'Transform your team from scattered ChatGPT experiments to aligned, productive workflows. Join dozens of teams learning shared ChatGPT workflows and collective intelligence. Led by Sat Singh, AICV founder.',
+  keywords: 'ChatGPT bootcamp, team alignment, AI training, business AI adoption, ChatGPT training for teams',
   
   openGraph: {
-    title: 'ChatGPT Business Bootcamp - Close Your AI Readiness Gap',
-    description: 'Transform your team from scattered ChatGPT experiments to aligned, productive workflows in one 4-hour session.',
+    title: 'ChatGPT Business Bootcamp',
+    description: 'Your Team\'s Already Using ChatGPT — Just Not Together. Our Business Bootcamp fixes that.',
     url: 'https://chatgpt-bootcamp.vercel.app',
     type: 'website',
   },
@@ -15,7 +15,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'ChatGPT Business Bootcamp',
-    description: 'Close your AI readiness gap in 4 hours. Premium team transformation.',
+    description: 'Close your AI readiness gap and align your team around ChatGPT adoption.',
   },
   
   robots: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
@@ -39,13 +39,22 @@ export default function RootLayout({ children }) {
               '@type': 'Organization',
               name: 'ChatGPT Business Bootcamp by AICV',
               url: 'https://chatgpt-bootcamp.vercel.app',
-              description: 'Premium 4-hour team transformation workshop',
+              description: 'Premium 4-hour team transformation workshop for ChatGPT alignment',
+              founder: {
+                '@type': 'Person',
+                name: 'Sat Singh',
+                title: 'Founder, AICV',
+              },
               contactPoint: {
                 '@type': 'ContactPoint',
-                contactType: 'Customer Service',
+                contactType: 'Sales',
                 telephone: '+1-949-228-9475',
                 email: 'sat@aicv.co',
               },
+              sameAs: [
+                'https://www.linkedin.com/company/aicv',
+                'https://twitter.com/aicv',
+              ],
             }),
           }}
         />
@@ -58,9 +67,15 @@ export default function RootLayout({ children }) {
               '@context': 'https://schema.org',
               '@type': 'Event',
               name: 'ChatGPT Business Bootcamp',
-              description: 'Close your team\'s AI readiness gap in 4 hours',
-              eventAttendanceMode: 'OnlineEventAttendanceMode',
+              description: 'Transform your team from scattered ChatGPT experiments to aligned, productive workflows',
+              eventAttendanceMode: 'MixedEventAttendanceMode',
               url: 'https://chatgpt-bootcamp.vercel.app',
+              organizer: {
+                '@type': 'Organization',
+                name: 'AICV (AI Coachella Valley)',
+                url: 'https://aicv.co',
+              },
+              duration: 'PT4H',
             }),
           }}
         />
@@ -78,7 +93,7 @@ export default function RootLayout({ children }) {
                   name: 'We\'ve already done basic AI training — will this still help?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'Yes. Most intro sessions stop at theory. We align real teams around applied workflows and measurable adoption.',
+                    text: 'Yes. Most intro sessions stop at theory. We align real teams around applied workflows, current features, and measurable adoption. This bootcamp goes beyond awareness into collective intelligence and readiness gap closure.',
                   },
                 },
                 {
@@ -86,7 +101,15 @@ export default function RootLayout({ children }) {
                   name: 'Do we need to be technical to join?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'No. It\'s designed for all roles — HR, marketing, ops, finance, and IT.',
+                    text: 'No. It\'s designed for all roles — HR, marketing, ops, finance, and IT. Each person sees examples relevant to their daily work. We meet teams where they are.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Can we customize it for our company or industry?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Absolutely. Every bootcamp starts with your data, tools, and examples. We tailor prompts, demos, and adoption maps to your team\'s reality. No two bootcamps are identical.',
                   },
                 },
               ],
